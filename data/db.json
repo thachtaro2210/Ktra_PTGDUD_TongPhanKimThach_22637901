@@ -1,23 +1,100 @@
 {
-   "menu": [
-    { "id": 1, "name": "Dashboard", "icon": "Squares.png", "active": true },
-    { "id": 2, "name": "Projects", "icon": "Folder.png", "active": false },
-    { "id": 3, "name": "Teams", "icon": "Groups.png", "active": false },
-    { "id": 4, "name": "Analytics", "icon": "Piechart.png", "active": false },
-    { "id": 5, "name": "Messages", "icon": "Chat.png", "active": false },
-    { "id": 6, "name": "Integrations", "icon": "Code.png", "active": false }
-],
-    "content": [
-      { "id": 1, "title": "Bài viết 1", "body": "Nội dung bài viết 1 - giới thiệu tổng quan." },
-      { "id": 2, "title": "Bài viết 2", "body": "Nội dung bài viết 2 - chi tiết về dịch vụ." },
-      { "id": 3, "title": "Bài viết 3", "body": "Tin tức mới nhất trong tuần." },
-      { "id": 4, "title": "Bài viết 4", "body": "Chia sẻ kinh nghiệm sử dụng sản phẩm." },
-      { "id": 5, "title": "Bài viết 5", "body": "Câu hỏi thường gặp từ người dùng." },
-      { "id": 6, "title": "Bài viết 6", "body": "Thông tin tuyển dụng tháng này." }
-    ],
-    "header": {
-      "title": "Trang Web Demo với React + JSON Server",
-      "subtitle": "Kết nối API giả lập nhanh chóng và tiện lợi"
+  "menu": [
+    {
+      "id": "1",
+      "name": "Dashboard",
+      "icon": "Squares.png",
+      "active": true
+    },
+    {
+      "id": "2",
+      "name": "Projects",
+      "icon": "Folder.png",
+      "active": false
+    },
+    {
+      "id": "3",
+      "name": "Teams",
+      "icon": "Groups.png",
+      "active": false
+    },
+    {
+      "id": "4",
+      "name": "Analytics",
+      "icon": "Piechart.png",
+      "active": false
+    },
+    {
+      "id": "5",
+      "name": "Messages",
+      "icon": "Chat.png",
+      "active": false
+    },
+    {
+      "id": "6",
+      "name": "Integrations",
+      "icon": "Code.png",
+      "active": false
     }
+  ],
+  "content": [
+    {
+      "id": "1",
+      "name": "Elizabeth Lee",
+      "company": "AvatarSystems",
+      "value": 359,
+      "date": "10/07/2023",
+      "status": "New",
+      "avata": "1.png"
+    },
+    {
+      "id": "2",
+      "name": "Carlos Garcia",
+      "company": "SnoozeShift",
+      "value": 747,
+      "date": "24/07/2023",
+      "status": "New",
+      "avata": "3.png"
+    },
+    {
+      "id": "3",
+      "name": "Elizabeth Bailey",
+      "company": "Prime Time Telecom",
+      "value": 554,
+      "date": "08/08/2023",
+      "status": "Completed",
+      "avata": "4.png"
+    },
+    {
+      "id": "4",
+      "name": "Ryan Brown",
+      "company": "OmniTech Corporation",
+      "value": 541,
+      "date": "31/08/2023",
+      "status": "In-progress",
+      "avata": "5.png"
+    },
+    {
+      "id": "5",
+      "name": "Ryan Young",
+      "company": "DataStream Inc.",
+      "value": 769,
+      "date": "01/05/2023",
+      "status": "Completed",
+      "avata": "6.png"
+    },
+    {
+      "id": "6",
+      "name": "Hailey Adams",
+      "company": "FlowRush",
+      "value": 922,
+      "date": "10/05/2023",
+      "status": "Completed",
+      "avata": "7.png"
+    }
+  ],
+  "header": {
+    "title": "Trang Web Demo với React + JSON Server",
+    "subtitle": "Kết nối API giả lập nhanh chóng và tiện lợi"
   }
-  
+}

@@ -43,41 +43,41 @@ export default function Menu() {
   };
 
   return (
-<div className="flex flex-col h-screen w-56 bg-white border border-gray-200 rounded-lg p-4">
-
-    
+    <div className="flex flex-col h-screen w-80 bg-white border border-gray-200 rounded-lg p-4 ml-auto">
       <div className="py-5 mb-2 text-center text-4xl font-semibold">
-        <div className="flex items-center gap-2 justify-center">
+        <div className="flex items-center gap-2 justify-left">
           <img src={logoImage} alt="Logo" />
         </div>
       </div>
 
       {/* Menu Items */}
       <nav className="flex-1 mb-4">
-  <ul className="list-none p-0 m-0 space-y-1">
-    {items.map((item) => (
-      <li key={item.id}>
-        <NavLink
-          to={`/${item.name.toLowerCase()}`}
-          className={({ isActive }) =>
-            `flex items-center w-full py-2 px-3 rounded-lg text-sm transition-all duration-200 ${
-              isActive || (item.name === "Dashboard" && window.location.pathname === "/")
-                ? "bg-pink-600 text-white"
-                : ""
-            }`
-          }
-        >
-          <img
-            src={iconMap[item.icon] || iconMap.default}
-            alt={item.name}
-            className="mr-3 text-lg opacity-80"
-          />
-          <span>{item.name}</span>
-        </NavLink>
-      </li>
-    ))}
-  </ul>
-</nav>
+        <ul className="list-none p-0 m-0 space-y-1">
+          {items.map((item) => (
+            <li key={item.id}>
+              <NavLink
+                to={`/${item.name.toLowerCase()}`}
+                className={({ isActive }) =>
+                  `flex items-center w-full py-2 px-3 rounded-lg text-sm transition-all duration-200 ${
+                    isActive ||
+                    (item.name === "Dashboard" &&
+                      window.location.pathname === "/")
+                      ? "bg-pink-600 text-white"
+                      : ""
+                  }`
+                }
+              >
+                <img
+                  src={iconMap[item.icon] || iconMap.default}
+                  alt={item.name}
+                  className="mr-3 text-lg opacity-80"
+                />
+                <span>{item.name}</span>
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </nav>
 
       <div className="mt-auto mb-10">
         <div className="bg-blue-50 rounded-lg p-4 text-center">
