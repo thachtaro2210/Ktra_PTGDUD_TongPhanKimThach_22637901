@@ -43,8 +43,9 @@ export default function Menu() {
   };
 
   return (
-    <div className="flex flex-col h-screen w-56 bg-white border-r border-gray-200 p-4">
-      {/* Logo */}
+<div className="flex flex-col h-screen w-56 bg-white border border-gray-200 rounded-lg p-4">
+
+    
       <div className="py-5 mb-2 text-center text-4xl font-semibold">
         <div className="flex items-center gap-2 justify-center">
           <img src={logoImage} alt="Logo" />

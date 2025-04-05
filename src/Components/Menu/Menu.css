@@ -5,7 +5,8 @@
     height: 100vh;
     width: 220px;
     background-color: white;
-    border-right: 1px solid #f3f4f6;
+    border: 2px solid #f3f4f6; /* Viền cho toàn bộ phần tử */
+    border-radius: 20px; /* Bo tròn góc với bán kính 20px */
     padding: 0 16px;
   }
   
