@@ -11,27 +11,25 @@ export default function Content() {
   useEffect(() => {
     fetch("http://localhost:3001/content")
       .then(res => res.json())
-      .then(data => setContentData(data));
+      .then(data => setContentData(data)); // Lưu trữ dữ liệu từ API vào state
   }, []);
 
   useEffect(() => {
-    // Initialize DataTable when contentData is available
     if (contentData && tableRef.current && !tableInstance.current) {
-      // Assuming contentData has some array of items to display in the table
+      // Khởi tạo DataTable khi có dữ liệu và chưa khởi tạo bảng
       tableInstance.current = $(tableRef.current).DataTable({
-        data: contentData.items || [], // Replace with your actual data array property
+        data: contentData || [],  // Dữ liệu là mảng content
         columns: [
           { title: "ID", data: "id" },
-          { title: "Name", data: "name" },
-          { title: "Description", data: "description" }
-          // Add more columns as needed based on your data structure
+          { title: "Title", data: "title" },
+          { title: "Body", data: "body" }
         ],
         pageLength: 10,
         responsive: true
       });
     }
 
-    // Cleanup function to destroy DataTable instance when component unmounts
+    // Dọn dẹp khi component bị unmount
     return () => {
       if (tableInstance.current) {
         tableInstance.current.destroy();
@@ -46,12 +44,14 @@ export default function Content() {
     <div className="content">
       {contentData ? (
         <>
-          <h3>{contentData.title}</h3>
+          <h3>{contentData.title}</h3> {/* Thêm tiêu đề */}
           <div className="table-responsive">
             <table ref={tableRef} className="display" width="100%"></table>
           </div>
         </>
-      ) : "Loading..."}
+      ) : (
+        "Loading..."
+      )}
     </div>
   );
 }
