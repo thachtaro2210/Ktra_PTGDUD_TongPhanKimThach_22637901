@@ -1,5 +1,9 @@
 
 import './App.css'
+import Content from './Components/Content/Content'
+import Footer from './Components/Footer/Footer'
+import Header from './Components/Header/Header'
+import Menu from './Components/Menu/Menu'
 
 function App() {
 
@@ -7,10 +11,13 @@ function App() {
   return (
    
     <div class="container">
-  <div class="header"><h2>My Header</h2></div>
-  <div class="menu"></div>
-  <div class="content"><h3>thach dep trai</h3><p>nay la phan noi dung</p></div>
-  <div class="footer"><h4>Footer</h4></div>
+ 
+ 
+      <div className="header"><Header /></div>
+      <div className="menu"><Menu /></div>
+      <div className="content"><Content /></div>
+      <div className="footer"><Footer /></div>
+   
     </div>
   )
 }
