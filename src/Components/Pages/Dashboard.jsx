@@ -3,7 +3,7 @@ import $ from 'jquery';
 import 'datatables.net-dt';
 import 'datatables.net-dt/css/dataTables.dataTables.css';
 
-export default function Content() {
+export default function Dashboard() {
   const [contentData, setContentData] = useState(null);
   const tableRef = useRef(null);
   const tableInstance = useRef(null);

@@ -1,20 +1,20 @@
 .container {
   display: grid;
   grid-template-areas:
-    "header header"
+    "menu header"
     "menu content"
-    "footer footer";
+    "menu footer";
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto 1fr auto;
   gap: 5px;
-  background-color: #8a3fa0;
+
   padding: 5px;
   min-height: 100vh;
   width: 100%;
   box-sizing: border-box;
 }
 
-/* Reset default margins and padding */
+
 body, html {
   margin: 0;
   padding: 0;
@@ -22,27 +22,28 @@ body, html {
   width: 100%;
 }
 
-/* Make sure the grid items have the right areas assigned */
+
 .header {
   grid-area: header;
-  background-color: rgba(224, 207, 231, 0.8);
+  background-color: rgba(251, 251, 251, 0.8);
   padding: 20px;
 }
 
 .menu {
   grid-area: menu;
-  background-color: rgba(224, 207, 231, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
 }
 
 .content {
   grid-area: content;
-  background-color: rgba(224, 207, 231, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
 }
 
 .footer {
   grid-area: footer;
-  background-color: rgba(224, 207, 231, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
 }
+@import "tailwindcss";

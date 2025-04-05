@@ -1,0 +1,116 @@
+/* Components/Menu/Menu.css */
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 220px;
+    background-color: white;
+    border-right: 1px solid #f3f4f6;
+    padding: 0 16px;
+  }
+  
+  .logo-container {
+    padding: 20px 0;
+    margin-bottom: 10px;
+    text-align: center; 
+    font-size: 50px;   
+    text-size-adjust: 10; 
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logo span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #111827;
+  }
+  
+  .nav-menu {
+    flex: 1;
+    margin-bottom: 16px;
+  }
+  
+  .nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .nav-menu li button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    color: #6b7280;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  
+  .nav-menu li button:hover {
+    background-color: #f9fafb;
+  }
+  
+  .nav-menu li button.active {
+    background-color: #ec4899;
+    color: white;
+  }
+  
+  .nav-menu .icon {
+    margin-right: 12px;
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+    opacity: 0.8;
+  }
+  
+  .promo-container {
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+  
+  .promo-box {
+    background-color: #f0f7ff;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .promo-image {
+    width: 100%;
+    height: 120px;
+    margin: 0 auto 12px;
+  }
+  
+  .promo-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #111827;
+    margin-bottom: 12px;
+  }
+  
+  .promo-button {
+    width: 100%;
+    padding: 8px 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    background: white;
+    color: #111827;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .promo-button:hover {
+    background-color: #f9fafb;
+  }

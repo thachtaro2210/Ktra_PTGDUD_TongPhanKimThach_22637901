@@ -1,13 +1,12 @@
 {
-    "menu": [
-      { "id": 1, "name": "Trang chủ" },
-      { "id": 2, "name": "Giới thiệu" },
-      { "id": 3, "name": "Dịch vụ" },
-      { "id": 4, "name": "Tin tức" },
-      { "id": 5, "name": "Liên hệ" },
-      { "id": 6, "name": "Hỏi đáp" },
-      { "id": 7, "name": "Tuyển dụng" }
-    ],
+   "menu": [
+    { "id": 1, "name": "Dashboard", "icon": "Squares.png", "active": true },
+    { "id": 2, "name": "Projects", "icon": "Folder.png", "active": false },
+    { "id": 3, "name": "Teams", "icon": "Groups.png", "active": false },
+    { "id": 4, "name": "Analytics", "icon": "Piechart.png", "active": false },
+    { "id": 5, "name": "Messages", "icon": "Chat.png", "active": false },
+    { "id": 6, "name": "Integrations", "icon": "Code.png", "active": false }
+],
     "content": [
       { "id": 1, "title": "Bài viết 1", "body": "Nội dung bài viết 1 - giới thiệu tổng quan." },
       { "id": 2, "title": "Bài viết 2", "body": "Nội dung bài viết 2 - chi tiết về dịch vụ." },
