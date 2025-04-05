@@ -1,0 +1,24 @@
+{
+    "menu": [
+      { "id": 1, "name": "Trang chủ" },
+      { "id": 2, "name": "Giới thiệu" },
+      { "id": 3, "name": "Dịch vụ" },
+      { "id": 4, "name": "Tin tức" },
+      { "id": 5, "name": "Liên hệ" },
+      { "id": 6, "name": "Hỏi đáp" },
+      { "id": 7, "name": "Tuyển dụng" }
+    ],
+    "content": [
+      { "id": 1, "title": "Bài viết 1", "body": "Nội dung bài viết 1 - giới thiệu tổng quan." },
+      { "id": 2, "title": "Bài viết 2", "body": "Nội dung bài viết 2 - chi tiết về dịch vụ." },
+      { "id": 3, "title": "Bài viết 3", "body": "Tin tức mới nhất trong tuần." },
+      { "id": 4, "title": "Bài viết 4", "body": "Chia sẻ kinh nghiệm sử dụng sản phẩm." },
+      { "id": 5, "title": "Bài viết 5", "body": "Câu hỏi thường gặp từ người dùng." },
+      { "id": 6, "title": "Bài viết 6", "body": "Thông tin tuyển dụng tháng này." }
+    ],
+    "header": {
+      "title": "Trang Web Demo với React + JSON Server",
+      "subtitle": "Kết nối API giả lập nhanh chóng và tiện lợi"
+    }
+  }
+  
