@@ -21,9 +21,9 @@ export default function Menu() {
         return res.json();
       })
       .then((data) => {
-        console.log(data); 
+        console.log(data);
         if (Array.isArray(data)) {
-          setItems(data); 
+          setItems(data);
         } else {
           console.error("Invalid menu structure:", data);
         }
@@ -53,28 +53,30 @@ export default function Menu() {
 
       {/* Menu Items */}
       <nav className="flex-1 mb-4">
-        <ul className="list-none p-0 m-0 space-y-1">
-          {items.map((item) => (
-            <li key={item.id}>
-              <NavLink
-                to={`/${item.name.toLowerCase()}`}
-                className={({ isActive }) =>
-                  `flex items-center w-full py-2 px-3 rounded-lg text-sm transition-all duration-200 ${
-                    isActive ? "bg-pink-600 text-white" : ""
-                  }`
-                }
-              >
-                <img
-                  src={iconMap[item.icon] || iconMap.default}
-                  alt={item.name}
-                  className="mr-3 text-lg opacity-80"
-                />
-                <span>{item.name}</span>
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-      </nav>
+  <ul className="list-none p-0 m-0 space-y-1">
+    {items.map((item) => (
+      <li key={item.id}>
+        <NavLink
+          to={`/${item.name.toLowerCase()}`}
+          className={({ isActive }) =>
+            `flex items-center w-full py-2 px-3 rounded-lg text-sm transition-all duration-200 ${
+              isActive || (item.name === "Dashboard" && window.location.pathname === "/")
+                ? "bg-pink-600 text-white"
+                : ""
+            }`
+          }
+        >
+          <img
+            src={iconMap[item.icon] || iconMap.default}
+            alt={item.name}
+            className="mr-3 text-lg opacity-80"
+          />
+          <span>{item.name}</span>
+        </NavLink>
+      </li>
+    ))}
+  </ul>
+</nav>
 
       <div className="mt-auto mb-10">
         <div className="bg-blue-50 rounded-lg p-4 text-center">
