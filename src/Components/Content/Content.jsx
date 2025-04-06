@@ -325,7 +325,7 @@ export default function Content() {
               onClick={() => setShowAddModal(true)}
               className="flex items-center bg-amber-50 text-white border border-pink-600 rounded px-4 py-1 text-sm hover:bg-pink-600 transition-colors items-center"
             >
-              <span className="mr-1"><img src={plus} alt="" className="w-2 h-2 rounded-2xl" /></span> 
+              <span className=""><img src={plus} alt="" className="w-2 h-2 rounded-2xl" /></span> 
             </button>
             <button className="flex items-center bg-white border border-pink-200 rounded px-4 py-1 text-sm text-gray-600">
               <span className="mr-1"><img src={t1} alt="" /></span> Import
@@ -564,10 +564,10 @@ export default function Content() {
       {/* Add User Modal */}
       {showAddModal && (
   <div className="fixed inset-0 flex items-center justify-center z-50">
-    {/* Semi-transparent overlay */}
-    <div className="fixed inset-0 bg-opacity-50 pointer-events-auto"></div>
+
+    <div className="fixed inset-0 backdrop-blur-sm bg-white/10 pointer-events-auto"></div>
     
-    {/* Modal positioned with z-index to appear above overlay */}
+  
     <div className="relative bg-white rounded-lg shadow-xl w-full max-w-md mx-4 z-10 overflow-hidden">
       <div className="px-6 py-4 bg-pink-50 border-b border-pink-100">
         <h3 className="text-lg font-semibold text-gray-800">Add New User</h3>
