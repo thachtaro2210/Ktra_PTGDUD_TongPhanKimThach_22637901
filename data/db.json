@@ -44,7 +44,7 @@
       "company": "AvatarSystems",
       "value": 359,
       "date": "10/07/2023",
-      "status": "New",
+      "status": "In-progress",
       "avata": "1.png"
     },
     {
@@ -83,6 +83,16 @@
       "status": "Completed",
       "avata": "6.png"
     },
+    {
+      "id": "6",
+      "name": "Hailey Adams",
+      "company": "FlowRush",
+      "value": 922,
+      "date": "10/05/2023",
+      "status": "Completed",
+      "avata": "7.png"
+    }
+    ,
     {
       "id": "6",
       "name": "Hailey Adams",
