@@ -11,7 +11,7 @@ import Teams from "./Components/Pages/Teams";
 import Analytics from "./Components/Pages/Analytics";
 import Messages from "./Components/Pages/Messages";
 import Integrations from "./Components/Pages/Integrations";
-
+//npm run start-json-server
 function App() {
   return (
     <Router>
